@@ -3,8 +3,8 @@ import sys
 sys.setrecursionlimit(100000000000)
 
 def newCoords(excluded):
-    rangeX = (480, 960)
-    rangeY = (270, 540)
+    rangeX = (200, 960)
+    rangeY = (200, 960)
 
     x = random.randrange(*rangeX)
     y = random.randrange(*rangeY)

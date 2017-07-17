@@ -15,7 +15,7 @@ def setup():
     global excluded
     global deltas
 
-    sentences = ["abcdefghijklmno"]    
+    sentences = ["hello this is a sample input"]    
     letters = {}
     excluded = set()
     deltas = set()
