@@ -1,12 +1,10 @@
 def printNode(nodeId, nodes):
-    printConnections(nodes[nodeId], nodes)
-    
     coords = nodes[nodeId]["coords"]
     ellipseSize = nodes[nodeId]["size"] * 20
 
     strokeWeight(1)
 
-    fill(0, 102, 153, 51)
+    fill(225,165,0,255)
     ellipse(coords["x"], coords["y"], ellipseSize, ellipseSize)
     
     fill(255,255,255)
@@ -19,7 +17,11 @@ def printNodes(nodes):
     for nodeId in nodes:
         coords = nodes[nodeId]["coords"]
         printNode(nodeId, nodes)
-            
+
+def printAllConnections(nodes):
+    for node in nodes:
+        printConnections(nodes[node], nodes)
+
 def printConnections(node, nodes):
     for target in node:
         try:

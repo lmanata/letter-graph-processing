@@ -5,7 +5,9 @@ from text import *
 
 def draw():
     background(254,202,121, 0)
-    printNodes(letters)
+    printAllConnections(letters)
+    printNodes(letters)    
+#Currently printing connections first so ellipses overlap lines, ideally get this shit together and play with opacity/index or "just" draw line between closest ellipse points
 
 def setup():
     size(1300,800);
